@@ -23,15 +23,10 @@ export default function ProductsIndex({ products, filters }: Props) {
     const searchTimeout = useRef<ReturnType<typeof setTimeout>>(undefined);
 
     const visit = (params: Record<string, unknown>) => {
-        router.get(
-            productsIndex().url,
-            { ...filters, ...params },
-            {
-                preserveState: true,
-                preserveScroll: true,
-                only: ['products', 'filters'],
-            },
-        );
+        router.reload({
+            data: { ...filters, ...params },
+            only: ['products', 'filters'],
+        });
     };
 
     const columns = buildColumns({
