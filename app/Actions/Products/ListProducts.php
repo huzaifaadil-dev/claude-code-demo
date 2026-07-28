@@ -6,7 +6,7 @@ use App\Data\ProductFilterData;
 use App\Models\Product;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
-class ListProductsAction
+class ListProducts
 {
     public static function handle(ProductFilterData $filters): LengthAwarePaginator
     {
