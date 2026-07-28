@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Actions\Products\ListProducts;
-use App\Data\ProductFilterData;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -16,7 +15,7 @@ class ProductController extends Controller
      */
     public function index(Request $request): Response
     {
-        $products = ListProducts::handle(ProductFilterData::from($request->all()));
+        $products = ListProducts::handle($request->all());
 
         return Inertia::render('admin/products/index', [
             'products' => $products,
