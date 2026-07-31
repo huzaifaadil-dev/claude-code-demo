@@ -13,6 +13,35 @@
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
 
+    /* Typography sourced from the Figma "Portfolio Design" file */
+    --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Preahvihear', ui-sans-serif, system-ui, sans-serif;
+
+    --text-xs: 0.625rem; /* 10px */
+    --text-sm: 0.6875rem; /* 11px */
+    --text-base: 1rem; /* 16px */
+    --text-md: 1.125rem; /* 18px */
+    --text-lg: 1.25rem; /* 20px */
+    --text-xl: 1.375rem; /* 22px */
+    --text-2xl: 1.625rem; /* 26px */
+    --text-3xl: 2.125rem; /* 34px */
+    --text-4xl: 2.5rem; /* 40px */
+    --text-5xl: 3.125rem; /* 50px */
+
+    /* Color palette sourced from the Figma "Portfolio Design" file */
+    --color-brand-975: #11071f;
+    --color-brand-950: #1a0b2e;
+    --color-brand-900: #2b0b3a;
+    --color-brand-800: #2c1250;
+    --color-brand-700: #4f228d;
+    --color-brand-600: #7127ba;
+    --color-brand-500: #9857d3;
+    --color-brand-400: #a362ff;
+    --color-brand-100: #ccd6f6;
+
+    --color-social-facebook: #1877f2;
+
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);
